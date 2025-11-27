@@ -9,8 +9,10 @@ from google.genai import types
 # Directory Setup (Replicated here for standalone usage)
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 OUTPUT_FOLDER = os.path.join(BASE_DIR, 'outputs')
+UPLOAD_FOLDER = os.path.join(BASE_DIR, 'temp_uploads')
 LOGO_PATH = os.path.join(BASE_DIR, 'static', 'Logo_of_YouTube_(2015-2017).png')
 
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 def load_whisper():
