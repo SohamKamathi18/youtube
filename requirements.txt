@@ -1,0 +1,8 @@
+streamlit
+openai-whisper
+google-genai
+Pillow
+requests
+fastapi
+uvicorn
+python-multipart
